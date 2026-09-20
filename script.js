@@ -25,10 +25,10 @@ async function loadEnv() {
 function applyEnv(env) {
   const $ = id => document.getElementById(id);
 
-  $('name').textContent    = env.PROFILE_NAME    || 'LMF';
+  $('name').textContent    = env.PROFILE_NAME    || 'YORIMC';
   $('tagline').textContent = env.PROFILE_TAGLINE || '';
   $('bio').textContent     = env.PROFILE_BIO     || '';
-  $('avatar').src          = env.PROFILE_AVATAR  || 'https://i.pravatar.cc/300';
+  $('avatar').src          = env.PROFILE_AVATAR  || 'https://api.dicebear.com/10.x/pixel-art/svg?seed=tr%C3%A2n';
 
   $('stat-exp').textContent          = env.STAT_EXPERIENCE   || '';
   $('stat-projects').textContent     = env.STAT_PROJECTS     || '';
@@ -41,9 +41,9 @@ function applyEnv(env) {
   $('email-link').href   = email ? `mailto:${email}` : '#';
 
   // Social
-  $('link-github').href    = env.SOCIAL_GITHUB    || '#';
+  $('link-github').href    = env.SOCIAL_GITHUB    || 'https://github.com/thanhthi124';
   $('link-linkedin').href  = env.SOCIAL_LINKEDIN  || '#';
-  $('link-twitter').href   = env.SOCIAL_TWITTER   || '#';
+  $'('link-twitter').href   = env.SOCIAL_TWITTER   || '#';
   $('link-instagram').href = env.SOCIAL_INSTAGRAM || '#';
 }
 
